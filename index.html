@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Random Generator</title>
+    <style>
+        body {
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+        }
+    </style>
+</head>
+
+<body>
+    <nav></nav>
+    <div class="flex-center contain">
+        <div class="settings">
+            <div class="inputs">
+                <div class="checkbox">
+                    <div class="d6">
+                        <input type="checkbox" id="D6" onclick='SelectMath(1, 6, `D6`)'>D6
+                    </div>
+                    <div class="d20">
+                        <input type="checkbox" id="D20" onclick='SelectMath(1, 20, `D20`)'>D20
+                    </div>
+                </div>
+                <div class="edited disabled">
+                    <span>
+                        <span>
+                            Min
+                        </span>
+                        <input type="number" id="min">
+                    </span>
+                    <span>
+                        <span>
+                            Max
+                        </span>
+                        <input type="number" id="max">
+                    </span>
+                </div>
+            </div>
+            <button type="button" id="changeOptions" onclick='Togle()'>
+                Your option
+            </button>
+            <div class="static-bonus">
+                static-bonus:
+                <input type="text">
+            </div>
+            <button type="button" id="Generate">
+                Generate
+            </button>
+            <div class="output">
+                <span id="output"> Output HERE!</span>
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
