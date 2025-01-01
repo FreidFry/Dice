@@ -41,11 +41,6 @@ changeOptionsButton.addEventListener('click', () => {
 
     d6Checkbox.checked = false;
     d20Checkbox.checked = false;
-
-    if (isNaN(minRange) || isNaN(maxRange) || minRange >= maxRange) {
-        alert('Введите корректные значения для Min и Max!');
-        return;
-    }
 });
 
 // Обработчик для кнопки генерации
